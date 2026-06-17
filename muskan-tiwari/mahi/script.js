@@ -155,13 +155,11 @@ const data = {
         }
     ],
 
-    // §04 Capabilities
+    // §04 Capabilities (Data-analyst focused)
     skills: [
-        { group: 'LANGUAGES', items: ['Python', 'SQL', 'JavaScript / TypeScript', 'R', 'Java', 'C / C++'] },
-        { group: 'ML / AI', items: ['PyTorch', 'TensorFlow', 'Scikit-learn', 'LLM Evaluation', 'Prompt Engineering', 'RAG', 'Multi-Agent Systems', 'LangChain', 'NLP', 'Computer Vision'] },
-        { group: 'DATA', items: ['Pandas', 'NumPy', 'Feature Engineering', 'EDA', 'Power BI', 'Tableau'] },
-        { group: 'BACKEND & DATABASES', items: ['FastAPI', 'PostgreSQL', 'Redis', 'Supabase', 'MongoDB', 'REST APIs'] },
-        { group: 'CLOUD & DEVOPS', items: ['AWS', 'ECS Fargate', 'RDS · S3', 'CloudWatch', 'Secrets Manager', 'Docker', 'Terraform', 'GCP', 'Azure', 'CI/CD'] },
+        { group: 'LANGUAGES', items: ['Python', 'C', 'C++', 'Java'] },
+        { group: 'ML / AI', items: ['PyTorch', 'TensorFlow', 'Scikit-learn', 'LLM Evaluation', 'Prompt Engineering'] },
+        { group: 'DATA', items: ['Pandas', 'NumPy', 'Feature Engineering', 'EDA', 'Power BI', 'Tableau', 'SQL', 'MongoDB', 'Hadoop'] },
         { group: 'WEB', items: ['React', 'Next.js', 'Node.js', 'HTML / CSS'] }
     ]
 };
