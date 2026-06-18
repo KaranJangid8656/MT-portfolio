@@ -355,7 +355,8 @@ a { color: inherit; }
 
 @media (max-width: 880px) {
     .hero-grid { grid-template-columns: 1fr; }
-    .hero-photo-wrap { max-width: 320px; }
+    .hero-photo-wrap { max-width: 320px; margin: 0 auto; }
+    .hero-photo { top: -0.25cm; }
     .spec-row { grid-template-columns: 110px 1fr; }
     .hero-links { margin-left: 0; width: 100%; }
 }
