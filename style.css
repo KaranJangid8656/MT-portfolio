@@ -314,7 +314,7 @@ a { color: inherit; }
 .hero-photo-wrap { position: relative; }
 .hero-photo {
     position: relative;
-    top: -2cm;
+    top: -3cm;
     width: 100%;
     aspect-ratio: 4 / 4.6;
     object-fit: cover;

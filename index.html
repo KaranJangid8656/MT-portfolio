@@ -4,7 +4,7 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muskan Tiwari — Data Science Student</title>
+    <title>MT — Data Science Student</title>
     <meta name="description" content="Muskan Tiwari — ML/AI engineer building production AI systems: LLM evaluation pipelines, multi-agent systems, RAG, MLOps, and cloud-native infrastructure. M.S. Data Science, CU Boulder.">
     <meta name="keywords" content="Machine Learning Engineer, AI Engineer, LLM, RAG, Multi-Agent Systems, MLOps, AWS, Python">
     <meta name="author" content="Muskan Tiwari">
@@ -13,9 +13,9 @@
     <meta property="og:type" content="profile">
     <meta property="profile:first_name" content="Muskan">
     <meta property="profile:last_name" content="Tiwari">
-    <meta property="og:site_name" content="Muskan Tiwari — Portfolio">
+    <meta property="og:site_name" content="MT — Portfolio">
     <meta property="og:locale" content="en_US">
-    <meta property="og:title" content="Muskan Tiwari — ML / AI Engineer">
+    <meta property="og:title" content="MT — ML / AI Engineer">
     <meta property="og:description" content="Production AI systems: LLM evaluation, multi-agent platforms, RAG pipelines, MLOps, and AWS infrastructure.">
     <meta property="og:url" content="https://Tiwari-Muskan.vercel.app/">
     <meta property="og:image" content="C:\Users\karan\OneDrive\Desktop\Mahi-Portfolio\muskan-tiwari\mahi\Images\Mahi-pic.jpeg">
@@ -24,7 +24,7 @@
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Muskan Tiwari — ML / AI Engineer">
+    <meta name="twitter:title" content="MT — ML / AI Engineer">
     <meta name="twitter:description" content="Production AI systems: LLM evaluation, multi-agent platforms, RAG pipelines, MLOps, and AWS infrastructure.">
     <meta name="twitter:image" content="https://Tiwari-Muskan.vercel.app/Images/Muskan-web.jpg">
     <meta name="twitter:image:alt" content="Portrait of Muskan Tiwari, ML / AI Engineer">
@@ -58,11 +58,7 @@
                     "https://github.com/muskantiwari20",
                     "https://www.linkedin.com/in/muskan-tiwari5/",
                 ],
-                "alumniOf": {
-                    "@type": "CollegeOrUniversity",
-                    "name": "University of Colorado Boulder",
-                    "sameAs": "https://www.colorado.edu/"
-                },
+                
                 "worksFor": {
                     "@type": "Organization",
                     "name": "CU Anschutz — LARK Lab, Dept. of Biomedical Informatics"
@@ -77,14 +73,14 @@
                 "@type": "WebSite",
                 "@id": "https://Tiwari-Muskan.vercel.app/#website",
                 "url": "https://Tiwari-Muskan.vercel.app/",
-                "name": "Muskan Tiwari — Portfolio",
+                "name": "MT — Portfolio",
                 "publisher": { "@id": "https://Tiwari-Muskan.vercel.app/#person" }
             },
             {
                 "@type": "ProfilePage",
                 "@id": "https://Tiwari-Muskan.vercel.app/#profilepage",
                 "url": "https://Tiwari-Muskan.vercel.app/",
-                "name": "Muskan Tiwari — ML / AI Engineer",
+                "name": "MT — ML / AI Engineer",
                 "isPartOf": { "@id": "https://Tiwari-Muskan.vercel.app/#website" },
                 "mainEntity": { "@id": "https://Tiwari-Muskan.vercel.app/#person" }
             }
@@ -96,7 +92,8 @@
     <script>
         (function () {
             try {
-                var t = localStorage.getItem('mc-theme')
+                var t = localStorage.getItem('mt-theme')
+                    || localStorage.getItem('mc-theme')
                     || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
                 document.documentElement.setAttribute('data-theme', t);
             } catch (e) { /* default light */ }
@@ -144,13 +141,7 @@
     <!-- ===== TOP BAR ===== -->
     <header class="topbar" id="topbar">
         <a class="topbar-id" href="#top">
-            <span class="topbar-mark" aria-hidden="true">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 222 170" fill="none">
-                    <path d="M16 156 V30 L63 91 L110 30 V156" stroke="currentColor" stroke-width="28" stroke-linecap="butt" stroke-linejoin="miter"/>
-                    <path d="M207.5 44.4 A56 56 0 1 0 207.5 127.6" stroke="currentColor" stroke-width="28" stroke-linecap="butt"/>
-                </svg>
-            </span>
-            <span class="mono">Muskan.Tiwari</span>
+            <span class="mono">Muskan Tiwari</span>
         </a>
         <nav class="topbar-nav" id="topbar-nav" aria-label="Sections">
             <a href="#overview" class="nav-link"><span class="nav-num">01</span>Overview</a>
@@ -204,13 +195,12 @@
                     </div>
 
                     <div class="hero-photo-wrap">
-                        <img src="Images/Mahi-pic.jpeg" alt="Portrait of Muskan Tiwari, ML / AI Engineer based in Denver, Colorado" class="hero-photo" fetchpriority="high">
-                        <span class="photo-caption mono">FIG. 1 — THE SYSTEM IN QUESTION</span>
+                        <img src="Images/Mahi-pic.jpeg" alt="Portrait of Muskan Tiwari ,  based in Bengaluru" class="hero-photo" fetchpriority="high">
+                        <span class="photo-caption mono"></span>
                     </div>
                 </div>
 
                 <div class="hero-actions">
-                    <a href="#projects" class="btn btn-primary">View projects</a>
                     <div class="hero-links">
                         <a href="https://github.com/muskantiwari20" target="_blank" rel="noopener noreferrer" class="mono text-link">GITHUB ↗</a>
                         <a href="https://www.linkedin.com/in/muskan-tiwari5/" target="_blank" rel="noopener noreferrer" class="mono text-link">LINKEDIN ↗</a>
@@ -221,11 +211,11 @@
         </section>
 
         <!-- ===== BENCHMARKS STRIP ===== -->
-        <section class="bench" aria-label="Key numbers">
+        <!-- <section class="bench" aria-label="Key numbers">
             <div class="wrap bench-grid">
                 <div class="bench-item">
-                    <span class="bench-num" data-count="3.96" data-decimals="2">0</span>
-                    <span class="bench-label mono">GPA · M.S. DATA SCIENCE</span>
+                    <span class="bench-num" data-count="8.6" data-decimals="2">0</span>
+                    <span class="bench-label mono">GPA ·  DATA SCIENCE</span>
                 </div>
                 <div class="bench-item">
                     <span class="bench-num"><span data-count="96.5" data-decimals="1">0</span>%</span>
@@ -240,18 +230,18 @@
                     <span class="bench-label mono">BUSINESS DATA COVERAGE</span>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <!-- ===== MARQUEE ===== -->
         <div class="marquee" aria-hidden="true">
             <div class="marquee-track mono" id="marquee-track">
-                <span>LLM EVALUATION</span><i></i>
+                <span>MACHINE LEARNING</span><i></i>
                 <span>MULTI-AGENT SYSTEMS</span><i></i>
-                <span>RAG PIPELINES</span><i></i>
-                <span>MLOPS</span><i></i>
-                <span>AWS · ECS FARGATE</span><i></i>
-                <span>PROMPT ENGINEERING</span><i></i>
-                <span>SHIPS TO PRODUCTION</span><i></i>
+                <span>DATA SCIENCE</span><i></i>
+                <span>PYTHON</span><i></i>
+                <span>POWER BI</span><i></i>
+                <span>TABLEAU</span><i></i>
+                <span>DATABASES</span><i></i>
             </div>
         </div>
 
@@ -264,7 +254,7 @@
                 </header>
                 <div class="overview-grid">
                     <div class="overview-text reveal">
-                        <p class="lead">I'm passionate about Data Analytics and Data Science, using data to uncover insights, solve problems, and support better decision-making. I enjoy working with datasets, identifying trends, building predictive models, and creating visualizations that make complex information easy to understand.</p>
+                        <p class="lead">I'm passionate about Data Analytics and Data Science, using data to uncover insights, solve problems, and support better decision-making. .</p>
                         <p>My skills include <strong>Python, SQL, Pandas, NumPy, Scikit-learn, Machine Learning, Statistical Analysis, Exploratory Data Analysis (EDA), Data Cleaning, Data Visualization, Power BI, Tableau, and Excel</strong>. Through academic and personal projects, I've worked on tasks such as data preprocessing, predictive modeling, dashboard development, and analyzing large datasets to generate actionable insights.</p>
                         <p>Outside of academics, you'll find me playing football, solving coding challenges, exploring new developments in AI and analytics, and building projects that combine data with real-world applications. I enjoy taking a messy problem, breaking it down with data, and turning it into a practical solution that creates value.</p>
                         
@@ -286,6 +276,20 @@
 
         <!-- Experience section removed per request -->
 
+        
+
+        <!-- ===== 04 CAPABILITIES (SKILLS) ===== -->
+        <section id="skills" class="section section-alt">
+            <div class="wrap">
+                <header class="sec-head">
+                    <span class="sec-num mono" data-scramble>§ 03</span>
+                    <h2 class="sec-title">Skills</h2>
+                </header>
+                <div class="cap-matrix" id="skills-matrix"><!-- populated by script.js --></div>
+            </div>
+        </section>
+
+
         <!-- ===== 03 EVALUATIONS (PROJECTS) ===== -->
         <section id="projects" class="section">
             <div class="wrap">
@@ -298,17 +302,6 @@
 
                 <h3 class="subsec-title mono">MORE WORK</h3>
                 <div class="evals evals-compact" id="additional-projects"><!-- populated by script.js --></div>
-            </div>
-        </section>
-
-        <!-- ===== 04 CAPABILITIES (SKILLS) ===== -->
-        <section id="skills" class="section section-alt">
-            <div class="wrap">
-                <header class="sec-head">
-                    <span class="sec-num mono" data-scramble>§ 03</span>
-                    <h2 class="sec-title">Skills</h2>
-                </header>
-                <div class="cap-matrix" id="skills-matrix"><!-- populated by script.js --></div>
             </div>
         </section>
 

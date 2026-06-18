@@ -1,5 +1,5 @@
 // ============================================
-//   Muskan Tiwari — MODEL CARD PORTFOLIO 2026
+//   MT — MODEL CARD PORTFOLIO 2026
 // ============================================
 
 // ===== DATA =====
@@ -19,7 +19,7 @@ const data = {
                 'Ran systematic prompt-engineering experiments; refined templates, structured outputs, and guardrails to improve reliability of generated clinical artifacts.',
                 'Built multi-step LLM pipelines for patient-facing clinical infographic generation (template selection → JSON blueprint → SVG composition) under strict layout constraints.'
             ],
-            tags: ['LLM Evaluation', 'Prompt Engineering', 'Clinical NLP', 'Guardrails']
+            tags: ['LLM Evalua', 'Prompt Engineering', 'Clinical NLP', 'Guardrails']
         },
         {
             id: 'RUN-04',
@@ -314,7 +314,9 @@ const finePointer = window.matchMedia('(pointer: fine)').matches;
 // Boot sequence — once per session, skipped for reduced motion
 function runBoot(onDone) {
     const boot = document.getElementById('boot');
-    const skip = reducedMotion || sessionStorage.getItem('mc-booted');
+    const bootedKey = 'mt-booted';
+    const legacyBootedKey = 'mc-booted';
+    const skip = reducedMotion || sessionStorage.getItem(bootedKey) || sessionStorage.getItem(legacyBootedKey);
     if (!boot || skip) {
         if (boot) boot.remove();
         document.body.classList.add('booted');
@@ -326,7 +328,7 @@ function runBoot(onDone) {
     const pctEl = document.getElementById('boot-pct');
     const fillEl = document.getElementById('boot-fill');
     const lines = [
-        'Muskan.Tiwari — SYSTEM INIT',
+        'MT — SYSTEM INIT',
         'LOADING WEIGHTS ............. <span class="ok">OK</span>',
         'CALIBRATING TYPE ............ <span class="ok">OK</span>',
         'MOUNTING PROJECTS ........... <span class="ok">OK</span>',
@@ -346,7 +348,8 @@ function runBoot(onDone) {
         pctEl.textContent = Math.round(eased * 100) + '%';
         fillEl.style.width = (eased * 100) + '%';
         if (p < 1) { requestAnimationFrame(tick); return; }
-        sessionStorage.setItem('mc-booted', '1');
+        sessionStorage.setItem(bootedKey, '1');
+        sessionStorage.setItem(legacyBootedKey, '1');
         boot.classList.add('done');
         document.body.classList.remove('booting');
         document.body.classList.add('booted');
@@ -492,6 +495,8 @@ function setupTheme() {
     const meta = document.querySelector('meta[name="theme-color"]');
     if (!btn) return;
     const root = document.documentElement;
+    const themeKey = 'mt-theme';
+    const legacyThemeKey = 'mc-theme';
     const apply = (mode, animate) => {
         if (animate) {
             root.classList.add('theme-anim');
@@ -502,15 +507,19 @@ function setupTheme() {
         btn.setAttribute('aria-pressed', String(mode === 'dark'));
         if (meta) meta.setAttribute('content', mode === 'dark' ? '#101116' : '#F2F1EB');
     };
-    apply(root.getAttribute('data-theme') || 'light', false);
+    const initialTheme = localStorage.getItem(themeKey) || localStorage.getItem(legacyThemeKey) || root.getAttribute('data-theme') || 'light';
+    apply(initialTheme, false);
     btn.addEventListener('click', () => {
         const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-        try { localStorage.setItem('mc-theme', next); } catch (e) { /* private mode */ }
+        try {
+            localStorage.setItem(themeKey, next);
+            localStorage.setItem(legacyThemeKey, next);
+        } catch (e) { /* private mode */ }
         apply(next, true);
     });
 }
 
-// Live Denver clock in the footer
+// Live  clock in the footer
 function setupClock() {
     const el = document.getElementById('local-time');
     if (!el) return;
@@ -525,7 +534,7 @@ function setupClock() {
 
 function consoleEgg() {
     console.log(
-        '%c Muskan.Tiwari %c You opened the console — clearly we should talk.\n' +
+        '%c MT %c You opened the console — clearly we should talk.\n' +
         '%c → tiwarimuskan270@gmail.com · github.com/MuskanTiwari0709',
         'background:#1828CE;color:#F2F1EB;font-weight:bold;padding:4px 8px;',
         'color:inherit;padding:4px 0;',
