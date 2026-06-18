@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://Tiwari-Muskan.vercel.app/sitemap.xml
