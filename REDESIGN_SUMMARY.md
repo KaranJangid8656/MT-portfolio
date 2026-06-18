@@ -83,7 +83,7 @@ Your portfolio website has been completely redesigned with a stunning, modern gl
 
 8. **Contact Section**
    - Updated with phone number: +1 79 7719 3546
-   - Email: tiwarimuskan270@gmail.com
+   - Email: muskantiwari.work@gmail.com
    - LinkedIn profile link
    - EmailJS integration preserved (service_692e32d, template_n3h2m8o)
 
@@ -158,7 +158,7 @@ Website/
 1. **Contact Form**
    - Fill out the form and submit
    - Should see success notification
-   - Email should arrive at tiwarimuskan270@gmail.com
+   - Email should arrive at muskantiwari.work@gmail.com
 
 2. **Theme Toggle**
    - Click the moon/sun button (top right)

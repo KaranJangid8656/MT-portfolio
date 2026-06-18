@@ -6,62 +6,62 @@
 const data = {
 
     // §02 Training run — most recent first (Updated June 2026)
-    experience: [
-        {
-            id: 'RUN-05',
-            status: 'running',
-            date: 'JAN 2026 — PRESENT',
-            role: 'Research Intern',
-            org: 'CU Anschutz · LARK Lab, Dept. of Biomedical Informatics',
-            loc: 'Aurora, CO',
-            points: [
-                'Designed rubric-based evaluation pipelines for LLM outputs in clinical annotation workflows, with QA checks and error analysis to surface failure modes and clinical relevance gaps.',
-                'Ran systematic prompt-engineering experiments; refined templates, structured outputs, and guardrails to improve reliability of generated clinical artifacts.',
-                'Built multi-step LLM pipelines for patient-facing clinical infographic generation (template selection → JSON blueprint → SVG composition) under strict layout constraints.'
-            ],
-            tags: ['LLM Evalua', 'Prompt Engineering', 'Clinical NLP', 'Guardrails']
-        },
-        {
-            id: 'RUN-04',
-            status: 'complete',
-            date: 'SEPT 2025 — DEC 2025',
-            role: 'AI Engineer (Capstone)',
-            org: 'Honda 99P Labs',
-            loc: 'Boulder, CO',
-            points: [
-                'Designed a multi-agent debate engine with hybrid retrieval, vector databases, and curated evidence packs; improved citation accuracy and response relevance.',
-                'Built the FastAPI + Uvicorn backend with advanced RAG and context engineering; deployed on AWS ECS Fargate.',
-                'Used AWS Secrets Manager and CloudWatch for secure configuration and observability.'
-            ],
-            tags: ['Multi-Agent', 'RAG', 'AWS ECS Fargate', 'FastAPI']
-        },
-        {
-            id: 'RUN-03',
-            status: 'complete',
-            date: 'MAY 2025 — AUG 2025',
-            role: 'Junior Data Scientist Intern',
-            org: 'Kobeyo',
-            loc: 'Boulder, CO',
-            points: [
-                'Improved production classification accuracy by building an MLOps pipeline for a custom BERT model with human-in-the-loop feedback — continuous fine-tuning and structured retraining cadences that sustained accuracy gains in a live environment.',
-                'Cut query time by 50% and expanded business data coverage by 40% by building a full-stack Python ingestion API with async Playwright scraping on a Supabase (PostgreSQL) backend.',
-                'Applied LLMs with prompt engineering to automate skill-tagging and structured job-data extraction at scale.'
-            ],
-            tags: ['MLOps', 'BERT', 'Human-in-the-Loop', 'PostgreSQL']
-        },
-        {
-            id: 'RUN-02',
-            status: 'complete',
-            date: 'AUG 2023 — SEPT 2023',
-            role: 'Data Science Intern',
-            org: 'CodSoft',
-            loc: 'Remote',
-            points: [
-                'Completed three applied ML projects end to end: sales prediction, movie prediction, and Titanic survival classification — preprocessing, feature engineering, training, and evaluation.'
-            ],
-            tags: ['Supervised Learning', 'Feature Engineering']
-        }
-    ],
+    // experience: [
+    //     {
+    //         id: 'RUN-05',
+    //         status: 'running',
+    //         date: 'JAN 2026 — PRESENT',
+    //         role: 'Research Intern',
+    //         org: 'CU Anschutz · LARK Lab, Dept. of Biomedical Informatics',
+    //         loc: 'Aurora, CO',
+    //         points: [
+    //             'Designed rubric-based evaluation pipelines for LLM outputs in clinical annotation workflows, with QA checks and error analysis to surface failure modes and clinical relevance gaps.',
+    //             'Ran systematic prompt-engineering experiments; refined templates, structured outputs, and guardrails to improve reliability of generated clinical artifacts.',
+    //             'Built multi-step LLM pipelines for patient-facing clinical infographic generation (template selection → JSON blueprint → SVG composition) under strict layout constraints.'
+    //         ],
+    //         tags: ['LLM Evalua', 'Prompt Engineering', 'Clinical NLP', 'Guardrails']
+    //     },
+    //     {
+    //         id: 'RUN-04',
+    //         status: 'complete',
+    //         date: 'SEPT 2025 — DEC 2025',
+    //         role: 'AI Engineer (Capstone)',
+    //         org: 'Honda 99P Labs',
+    //         loc: 'Boulder, CO',
+    //         points: [
+    //             'Designed a multi-agent debate engine with hybrid retrieval, vector databases, and curated evidence packs; improved citation accuracy and response relevance.',
+    //             'Built the FastAPI + Uvicorn backend with advanced RAG and context engineering; deployed on AWS ECS Fargate.',
+    //             'Used AWS Secrets Manager and CloudWatch for secure configuration and observability.'
+    //         ],
+    //         tags: ['Multi-Agent', 'RAG', 'AWS ECS Fargate', 'FastAPI']
+    //     },
+    //     {
+    //         id: 'RUN-03',
+    //         status: 'complete',
+    //         date: 'MAY 2025 — AUG 2025',
+    //         role: 'Junior Data Scientist Intern',
+    //         org: 'Kobeyo',
+    //         loc: 'Boulder, CO',
+    //         points: [
+    //             'Improved production classification accuracy by building an MLOps pipeline for a custom BERT model with human-in-the-loop feedback — continuous fine-tuning and structured retraining cadences that sustained accuracy gains in a live environment.',
+    //             'Cut query time by 50% and expanded business data coverage by 40% by building a full-stack Python ingestion API with async Playwright scraping on a Supabase (PostgreSQL) backend.',
+    //             'Applied LLMs with prompt engineering to automate skill-tagging and structured job-data extraction at scale.'
+    //         ],
+    //         tags: ['MLOps', 'BERT', 'Human-in-the-Loop', 'PostgreSQL']
+    //     },
+    //     {
+    //         id: 'RUN-02',
+    //         status: 'complete',
+    //         date: 'AUG 2023 — SEPT 2023',
+    //         role: 'Data Science Intern',
+    //         org: 'CodSoft',
+    //         loc: 'Remote',
+    //         points: [
+    //             'Completed three applied ML projects end to end: sales prediction, movie prediction, and Titanic survival classification — preprocessing, feature engineering, training, and evaluation.'
+    //         ],
+    //         tags: ['Supervised Learning', 'Feature Engineering']
+    //     }
+    // ],
 
     // §03 Evaluations — featured
     featuredProjects: [],
@@ -299,7 +299,7 @@ function setupForm() {
             }
         } catch (err) {
             console.error('Contact form error:', err);
-            status.textContent = '✗ SEND FAILED — email me directly at tiwarimuskan270@gmail.com';
+            status.textContent = '✗ SEND FAILED — email me directly at muskantiwari.work@gmail.com';
             status.className = 'form-status mono err';
         } finally {
             btn.textContent = original;
@@ -535,7 +535,7 @@ function setupClock() {
 function consoleEgg() {
     console.log(
         '%c MT %c You opened the console — clearly we should talk.\n' +
-        '%c → tiwarimuskan270@gmail.com · github.com/MuskanTiwari0709',
+        '%c → muskantiwari.work@gmail.com · github.com/MuskanTiwari0709',
         'background:#1828CE;color:#F2F1EB;font-weight:bold;padding:4px 8px;',
         'color:inherit;padding:4px 0;',
         'color:#1828CE;padding:2px 0;'

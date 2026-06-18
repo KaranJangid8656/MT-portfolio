@@ -8,9 +8,9 @@ Prefer concise bullets, strong action verbs, and quantified impact where availab
 
 ## Basic Info
 
-**Name:** Muskan Dharmendra Tiwari (Preferred: Muskan)  
+**Name:** Muskan  Tiwari (Preferred: Muskan)  
 **Role:** MS Data Science Graduate Student, University of Colorado Boulder (Expected May 2026)  
-**Email:** tiwarimuskan270@gmail.com  
+**Email:** muskantiwari.work@gmail.com  
 **Phone:** +1 79 7719 3546  
 **Portfolio:** https://Tiwari-Muskan.vercel.app/  
 **LinkedIn:** https://www.linkedin.com/in/MuskanTiwari10/  
